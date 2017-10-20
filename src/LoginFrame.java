@@ -41,7 +41,7 @@ public class LoginFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(jtfID.getText().equals("test")&&new String(jtfPW.getPassword()).equals("test")){
+                if(jtfID.getText().equals("h304")&&new String(jtfPW.getPassword()).equals("23323456")){
 //                    System.out.println("Hello ~ it`s me");
                     MainFrame mfe = new MainFrame(LoginFrame.this);
                     setDefaultCloseOperation(LoginFrame.DISPOSE_ON_CLOSE);

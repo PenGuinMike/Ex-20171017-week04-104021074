@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Random;
 
 public class MainFrame extends JFrame {
     Container cp;
@@ -20,11 +21,13 @@ public class MainFrame extends JFrame {
     }
 
     private void init(){
+        jtf.setEnabled(false);
         cp=this.getContentPane();
         cp.setLayout(new BorderLayout());
         this.setBounds(dim.width/2-FrameW/2,dim.height/2-FrameH/2,FrameW,FrameH);
         cp.add(jtf,BorderLayout.NORTH);
         cp.add(jpn,BorderLayout.CENTER);
+
 
         this.addWindowListener(new WindowAdapter() {
             @Override
@@ -43,6 +46,7 @@ public class MainFrame extends JFrame {
                     JButton tembtn  =(JButton)e.getSource();
                     jtf.setText(jtf.getText()+tembtn.getText());
                 }
+
             });
         }
 
